@@ -14,10 +14,9 @@
 // do primeiro e diminuindo ate o segundo pelo valor do 3 parametro
 // ex:range(8, -3, 2) -> [8, 6, 4, 2, 0, -2]
 function criarArray(a, b = null ,c = 1) {
+    const nums = []
     
     if(b == null){
-        const nums = []
-
         for(let n = a; n > 0; n--){
             nums[n - 1] = n
         }
@@ -25,9 +24,7 @@ function criarArray(a, b = null ,c = 1) {
         console.log(nums)
     }
     else if(b > a){
-        const nums = []
         let i = 0
-
         for(let n = a; n <= b; n = n + c){
             nums[i] = n
             i++
@@ -36,9 +33,7 @@ function criarArray(a, b = null ,c = 1) {
         console.log(nums)
     }
     else {
-        const nums = []
         let i = 0
-
         for(let n = a; n >= b; n = n - c){
             nums[i] = n
             i++

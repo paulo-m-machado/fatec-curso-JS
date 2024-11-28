@@ -7,6 +7,10 @@ const num = [1, 2, 3, 4, 5]
 // syntax mais compacta
 const num2 = num.map(el => el * 2)
 
+// uma funcao map espera receber 3 valores:
+// o valor do elemento, o index e o array
+// nesta ordem
+
 //um exemplo da mesma coisa escrita sem uso de uma funcao map
 const num3 = []
 for(let n of num) {
